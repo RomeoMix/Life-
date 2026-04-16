@@ -45,14 +45,50 @@
       width: 0%;
     }
   </style>
+  .top-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.title-box {
+  flex: 1;
+}
+
+.subtitle {
+  color: #aaa;
+  margin-top: 8px;
+  font-size: 18px;
+}
+
+.character-box {
+  width: 260px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.character {
+  width: 100%;
+  max-width: 260px;
+  border-radius: 16px;
+  border: 2px solid #7c3aed;
+  box-shadow: 0 0 25px rgba(124, 58, 237, 0.45);
+}
 </head>
 <body>
 
- <div class="header">
-  <h1>Romany - Life RPG</h1>
-  <img src="character.jpg" class="character" />
-</div>
+ <div class="top-section">
+  <div class="title-box">
+    <h1>Romany - Life RPG</h1>
+    <p class="subtitle">Main Character Profile</p>
+  </div>
 
+  <div class="character-box">
+    <img src="character.jpg" alt="Main Character" class="character" />
+  </div>
+</div>
   <div class="card">
     <h2 id="level">Level: 1</h2>
     <div class="bar">
